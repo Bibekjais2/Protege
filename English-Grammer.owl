@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12">
+        <rdfs:comment>This is the ontology of English Grammer.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasAssessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasAssessment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasGrammarConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasGrammarConcept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasLesson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasLesson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasScore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Score"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#practicesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#practicesOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasExample -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasExample">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasQuestion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasQuestion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasRule -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasRule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasScoreValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasScoreValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Score"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudentName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Adjective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Adjective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Adverb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Adverb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Comma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Comma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Conjunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Conjunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#ExampleLesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#ExampleLesson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#ExclamationMark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#ExclamationMark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exclamatory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exclamatory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Imperative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Imperative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Interjection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Interjection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Interrogative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Interrogative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#IntroductoryLesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#IntroductoryLesson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PracticeLesson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PracticeLesson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Preposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Preposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Pronoun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Pronoun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#QuestionMark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#QuestionMark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Punctuation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Quiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Quiz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Score"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#SentenceType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Topic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#PartsOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative_Sentence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative_Sentence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative_Sentence"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasExample"/>
+        <owl:targetValue>The sun rises in the east.</owl:targetValue>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Declarative_Sentence"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasRule"/>
+        <owl:targetValue>A declarative sentence makes a statement.</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exercise_Verbs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exercise_Verbs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Exercise_Verbs"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasQuestion"/>
+        <owl:targetValue>Fill in the blank with the correct verb: &apos;She ___ to the store yesterday.</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Introductory_Nouns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Introductory_Nouns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun_Concept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun_Concept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun_Concept"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasExample"/>
+        <owl:targetValue>John, city, car, happiness.</owl:targetValue>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Noun_Concept"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasRule"/>
+        <owl:targetValue>A noun is the name of a person, place, thing, or idea.</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Practice_Verbs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Practice_Verbs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Lesson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Quiz_Nouns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Quiz_Nouns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Assessment"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Quiz_Nouns"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasQuestion"/>
+        <owl:targetValue>Identify the nouns in this sentence: &apos;The dog barked loudly.</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Alice"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudentName"/>
+        <owl:targetValue>Alice</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Student_Bob"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasStudentName"/>
+        <owl:targetValue>Bob</owl:targetValue>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb_Concept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb_Concept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#GrammarConcept"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb_Concept"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasRule"/>
+        <owl:targetValue>A verb expresses action or a state of being.</owl:targetValue>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#Verb_Concept"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12#hasExample"/>
+        <owl:targetValue>run, is, seem.</owl:targetValue>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
